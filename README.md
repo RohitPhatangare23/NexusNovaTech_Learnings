@@ -18,8 +18,9 @@ The repository is structured into folders based on topics:
 ```
 NexusNovaTech_Learnings/
 │-- Web_Development/
-│   │-- React/
-│   │-- Node.js/
+│   │-- HTML/tags
+│   │-- CSS/
+│   │-- JavaScript/
 │-- System_Design/
 │-- SQL/
 │-- Miscellaneous/
