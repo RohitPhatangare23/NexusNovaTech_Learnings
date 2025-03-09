@@ -31,7 +31,7 @@ Each folder contains markdown files (`.md`) with notes, code snippets, and expla
 ## 🔥 How to Use This Repo?
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/NexusNovaTech_Learnings.git
+   git@github.com:RohitPhatangare23/NexusNovaTech_Learnings.git
    ```
 2. Navigate to the desired topic folder.
 3. Explore the markdown files and code snippets to reinforce your learning.
