@@ -1,23 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Tag In Html</title>
+    <!-- Meta tags= are self closing tag. it help to SEO Purpose,it will show on websites -->
+     <meta name="desciption" content="This top 10 tag , and imp meta tags">
+     <meta name="author" content="Rohit Phatangare">
+     <meta name="keywords" content="HTML,TAG,CSS,JS">
+     <meta http-equiv="refresh" content="5"> <!-- it will refresh in 5 sec-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- it will acssible on multiple devices-->
+    <title>10 Advanced Tag & Meta Tag In Html</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src=""></script>
+
+
+
+
+    <!-- Article = https://dev.to/rabiulhossen/10-advance-html-tag-you-should-know-e8e -->
 </head>
+
 <body>
     <!-- It's Help to used to create FAQ -->
+    <!-- The details> element is used to generate a widget that can be opened and closed by the user.
+            summary> element is used as a child element of the details> element -->
     <details>
         <summary>HTML Advanced Tag</summary>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, iure. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit qui quae aut sint aperiam quisquam, quod ex, sequi cumque ea at repudiandae? Vitae ipsam, tenetur deserunt repellendus voluptates iste tempore consequatur odit hic saepe architecto repellat doloremque aliquam unde quo!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, iure. Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Fugit qui quae aut sint aperiam quisquam, quod ex, sequi cumque ea at repudiandae? Vitae
+            ipsam, tenetur deserunt repellendus voluptates iste tempore consequatur odit hic saepe architecto repellat
+            doloremque aliquam unde quo!</p>
     </details>
 
-    <datalist>
-        <option value="HTML">HTML</option>
-        <option value="CSS">CSS</option>
-        <option value="JavaScript">JavaScript</option>
-        <option value="PHP">PHP</option>
-        <option value="Python">Python</option>
+
+    <!-- You can use the HTML tag <datalist> to create a dropdown or searchable text inside an input field without using any javascript. -->
+    <label for="browser">Choose your browser from the list:</label>
+    <input list="browsers" name="browser" id="browser">
+
+    <datalist id="browsers">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
     </datalist>
+
+    <!-- The<dialog> element enables the creation of popup dialogs and modals on a web page. -->
+    <h2>Dialog Example</h2>
+    <button id="openDialog">Open Dialog</button>
+
+    <dialog id="myDialog">
+        <p>This is a sample dialog box!</p>
+        <button id="closeDialog">Close</button>
+    </dialog>
+
+
+    <!-- The meter> tag defines a scalar measurement or a fractional value inside a defined range. -->
+    <h2>Progress Level using &lt;meter&gt; Tag</h2>
+
+    <label for="disk">Disk Space Usage:</label>
+    <meter id="disk" value="60" min="0" max="100" low="30" high="80" optimum="50">
+        60%
+    </meter>
+    <p>Current usage: 60%</p>
+
+    <label for="battery">Battery Level:</label>
+    <meter id="battery" value="80" min="0" max="100">
+        80%
+    </meter>
+    <p>Battery: 80%</p>
+
+
+    <!-- The title of a creative work, such as a book, film, sculpture, or lyric, is indicated by the <cite> element. It is used to give credit to the work's original creator. The <cite> element's content is normally presented in italics text. -->
+
+    <cite>
+        <a href="https://www.amazon.com/Rich-Dad-Poor-Teach-Middle/dp/1612680194">Rich Dad Poor Dad</a> Robert Kiyosaki, Sharon Lechter
+        <br>
+        <a href="https://www.amazon.in/Laws-Power-Robert-Greene-Collection/dp/1861972784">The 48 Laws of Power</a> Robert Greene
+        <br>
+    </cite>
+
+    <!-- The <fieldset> tag is used to group related elements in form sections. The <fieldset> tag creates a box around related items and can also be used to create an aesthetically designed box around form elements. -->
+
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" required><br><br>
+
+            <button type="submit">submit</button>
+        </fieldset>
+    </form>
+
+
+    <!-- del/s tag & ins/u tag -->
+     <p>Lorem ipsum <del>Do Or Die</del> dolor sit, amet consectetur adipisicing elit. <ins>Failure</ins> Suscipit, vitae.</p>
+
+    <p>Lorem ipsum <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nostrum.</b> dolor sit amet consectetur, adipisicing elit. us sed perferendis cumque atque <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, dicta.</strong> veritatis molestias xplicabo architecto obcaecati asperiores perferendis, <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, tenetur?</i> eos e nobis maxime quo debitis corporis. <u>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, atque.</u> Quia eum ullam qui orum ab fuga molestiae libero laudantium voluptates! Laborum laudantium, ex recusandae fuga unde officia eveniet exercitationem veniam <s>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, odit.</s> eaque placeat sit! Accusantium ipsum cum architecto repudiandae. nostrum. Nisi numquam culpa quam laborum non, consequatur possimus natus necessitatibus repellat <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, iusto.</em> veniam voluptatem quaerat beatae qui fugiat architecto nostrum iure! Commodi dolor exercitationem  um ipsum ad a. Commodi numquam voluptatum rerum sequi quas porro molestiae? Expedita, libero. Vero, deserunt magni.</p>
+    
+    <h1>2 <sup>5</sup></h1>
+    <h1>O <sub>2</sub></h1>
+
+    <pre>rohit phatangare
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, cupiditate.
+    Lorem, ipsum dolor.
+    </pre>
+
+    <!--  -->
+
+
+
+
+
+
+
+
+    <script>
+        const dialog = document.getElementById("myDialog");
+        const openButton = document.getElementById("openDialog");
+        const closeButton = document.getElementById("closeDialog");
+
+        openButton.addEventListener("click", () => {
+            dialog.showModal();
+        });
+
+        closeButton.addEventListener("click", () => {
+            dialog.close();
+        });
+    </script>
+
+
 </body>
+
 </html>
