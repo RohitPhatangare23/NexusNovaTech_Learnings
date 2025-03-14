@@ -1,0 +1,105 @@
+/*
+SCSS concepts = 1)operator + / * -
+                2)variable
+                3)nesting
+                4) mixins   same properties ki grouping/
+                5)Parameter pass value through parameter
+                6)Partial property css seperate / all mixin/var/any css ko alag page pe likh do  then call karo as per use
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.continer1 {
+  width: 95vw;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid red;
+  background-color: #06b2ec;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 10px;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.continer1 h2 {
+  color: black;
+}
+
+.continer1 h2:hover {
+  color: red;
+}
+
+.continer1 h2::before {
+  content: "Mr ";
+}
+
+.continer1 p {
+  color: white;
+}
+
+.continer1 p:hover {
+  color: red;
+}
+
+.continer2 {
+  width: 95vw;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid red;
+  background-color: #ec06e8;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 10px;
+  padding: 10px;
+}
+
+.continer3 {
+  width: 95vw;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid red;
+  background-color: #2cec06;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 10px;
+  padding: 10px;
+}
+/*# sourceMappingURL=main.css.map */

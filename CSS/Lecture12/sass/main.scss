@@ -1,0 +1,41 @@
+/*
+SCSS concepts = 1)operator + / * -
+                2)variable
+                3)nesting
+                4) mixins   same properties ki grouping/
+                5)Parameter pass value through parameter
+                6)Partial property css seperate / all mixin/var/any css ko alag page pe likh do  then call karo as per use
+
+*/
+@import "mixin";
+@import "var";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.continer1{
+    @include flexprob($bg-color1);
+    font-size: 0.8rem+1.2rem;
+    h2{
+        color: rgb(0, 0, 0);
+        &:hover{
+            color: rgb(255, 0, 0);
+        }
+        &::before{
+            content: "Mr ";
+        }
+    }
+    p{
+        color: white;
+        &:hover {
+            color: rgb(255, 0, 0);
+        }
+    }
+}
+.continer2{
+    @include flexprob($bg-color2)
+}
+.continer3{
+    @include flexprob($bg-color3)
+}
