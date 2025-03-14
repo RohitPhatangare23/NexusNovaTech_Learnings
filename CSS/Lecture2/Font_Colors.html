@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts and Colours</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        p{
+            font-size: 20px;
+            /* fall back system that's why 7-6 fonts showing "Web safe fonts" => ek use nahi hui to dusri show hogi  */
+            /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; */
+            font-weight: 300;  /* opecity of letters*/
+            line-height: 30px; /* distance between 2 line*/
+
+            /* google fonts */
+            font-family: 'Bebas Neue', sans-serif;
+            font-style: italic;
+
+        }
+        /* add colours 4 ways => name / rgb / hexa / hsl */
+        .firstpara{
+            /* with name */
+            background-color: yellow;
+            color: red;
+        }
+        .secondpara{
+            /* with RGB Colors */
+            background-color: rgb(79, 7, 245);
+            color: rgb(242, 0, 255);
+        }
+        .thirdpara{
+            /* 0.76 here opecity */
+            background-color:rgba( 159, 250, 159,  0.76);
+           
+        }
+        .fourthpara{
+            /* hexa code */
+            background-color:#ffab5069;  
+            /* 69 here opecity ff red / ab green / 50 blue */
+            
+        }
+        .fifthpara{
+            /* with HSL Code  1 here opecity*
+            hsla(hue, saturation, lightness, alpha)
+            */
+            background-color: hsl(175, 93%, 47% , 1);
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <h2>Tutorial Of Fonts And Colours</h2>
+    <p class="firstpara">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui facilis consectetur officia sapiente maiores non mollitia ut inventore, quaerat sint dolore tenetur similique minima exercitationem ullam necessitatibus! Aperiam repudiandae rem laborum voluptatem magni autem doloribus, quos, odio totam perferendis quod quas praesentium ducimus dicta quo eos et, deserunt atque blanditiis!
+
+    </p>
+    <p class="secondpara">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui facilis consectetur officia sapiente maiores non mollitia ut inventore, quaerat sint dolore tenetur similique minima exercitationem ullam necessitatibus! Aperiam repudiandae rem laborum voluptatem magni autem doloribus, quos, odio totam perferendis quod quas praesentium ducimus dicta quo eos et, deserunt atque blanditiis!
+
+    </p>
+    <p class="thirdpara">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui facilis consectetur officia sapiente maiores non mollitia ut inventore, quaerat sint dolore tenetur similique minima exercitationem ullam necessitatibus! Aperiam repudiandae rem laborum voluptatem magni autem doloribus, quos, odio totam perferendis quod quas praesentium ducimus dicta quo eos et, deserunt atque blanditiis!
+
+    </p>
+    <p class="fourthpara">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui facilis consectetur officia sapiente maiores non mollitia ut inventore, quaerat sint dolore tenetur similique minima exercitationem ullam necessitatibus! Aperiam repudiandae rem laborum voluptatem magni autem doloribus, quos, odio totam perferendis quod quas praesentium ducimus dicta quo eos et, deserunt atque blanditiis!
+
+    </p>
+
+    <p class="fifthpara">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui facilis consectetur officia sapiente maiores non mollitia ut inventore, quaerat sint dolore tenetur similique minima exercitationem ullam necessitatibus! Aperiam repudiandae rem laborum voluptatem magni autem doloribus, quos, odio totam perferendis quod quas praesentium ducimus dicta quo eos et, deserunt atque blanditiis!
+
+    </p>
+</body>
+
+</html>

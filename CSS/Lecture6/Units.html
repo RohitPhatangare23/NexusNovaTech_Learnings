@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Units</title>
+    <style>
+        .box {
+            border: 2px solid red;
+            /* width: 50%; */
+        }
+
+        .parent {
+            border: 2px solid blue;
+            background-color: rgb(177, 172, 242);
+            width: 50%;
+        }
+
+        .child {
+            /* margin: 5px; */
+            border: 2px solid green;
+            background-color: rgb(164, 240, 179);
+            width: 50%;
+            /* 50% of parent ke width */
+        }
+
+        .container {
+            background-color: bisque;
+            border: 2px solid black;
+            height: 100vh;
+            /* View port ke hight le lega */
+            width: 50vw;
+        }
+
+        .container2 {
+            border: 2px solid red;
+            font-size: 40px;
+        }
+
+        .wrapper {
+            /* wrapper ka parent body hey bydefault that font-size 16 px hote hey that's why width is 16px */
+            font-size: 1em;
+        }
+
+        .px {
+            width: 200px;
+        }
+
+        .vw {
+            width: 10vw;
+        }
+
+        .em {
+            width: 10em;
+        }
+
+        .went {
+            font-size: 10px;
+        }
+
+        .go {
+            font-size: 10em;
+            /* 10 px * 10 em */
+        }
+
+        .firstpara {
+            border: 2px solid black;
+            font-size: 5rem;
+            /*body font size is 16 px there for 16*5=80 font size*/
+        }
+        /*
+        Relative length units (use this units for make responsive b sites) 
+        har device par site look good
+         */
+    </style>
+</head>
+
+<body>
+    <h1><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units"> CSS Units</a></h1>
+    <div class="box">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="parent">
+
+        <div class="child">
+            Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur.
+    </div>
+
+    <div class="container2">
+        Lorem ipsum dolor sit amet consectetur.
+    </div>
+
+    <div class="wrapper">
+        <div class="box px">I am 200px wide</div>
+        <div class="box vw">I am 10vw wide</div>
+        <div class="box em">I am 10em wide</div>
+    </div>
+
+    <div class="went">
+        <div class="go">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, vero!
+        </div>
+    </div>
+
+    <p class="firstpara">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, error?
+    </p>
+
+
+    <!-- pixel  = Pixels, or px , are one of the most common length units in CSS. In CSS, 1 pixel is formally defined as 1/96 of an inch. 
+
+    Difference between physical pixel and logical pixel. 
+
+    Physical pixels refer to the actual individual dots that make up a display screen, while logical pixels are a virtual measurement used for consistent layout and scaling in software development across different devices.
+
+    PPI refers to the number of pixels per inch on a digital display, while DPI refers to the number of dots per inch that a printer can produce. PPI is relevant for screens and displays, while DPI is relevant for printed materials. 
+
+    To increase responsive property we can use: 
+    media queries property. (We always try to develop in low dimension let's say mob view, the using min width we can break down.)
+    display : flexbox unit will also help us, as it will give us a chance to display divs in row or column wise using wrap or no wrap. 
+    Using of relative property like %, vw, vh. 
+    By giving a height a width in html and fix width by max() or min() function, and height : auto property, using calc() function will also help us in this case,
+
+    rem = relative hote hey root element according
+    -->
+
+</body>
+
+</html>

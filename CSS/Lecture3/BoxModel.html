@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <!-- BOX Sizing Boder Box -->
+    <style>
+        /* *{ */
+        /* Universal Selector  */
+        /* margin: 0px;
+                padding: 0px; */
+        /*  } */
+
+        p {
+            font-size: 20px;
+        }
+
+        h2 {
+            background-color: aqua;
+            /* border-style: solid;
+            border-width: 20px;
+            border-color: red; */
+
+            border: 12px solid green;
+            /* Short hand notaion all three value in single line*/
+
+            border-top: 10px black dashed;
+            border-bottom: 10px black dashed;
+            border-right: 10px black dashed;
+            border-left: 10px black dashed;
+
+        }
+
+        .firstpara {
+            border: 5px blue solid;
+            /* border: 5px 10px 20px 30px; */
+            /* TOP BOTTOM LEFT RIGHT */
+            border-radius: 15px;
+            height: 500px;
+            width: 400px;
+
+        }
+
+        .secondpara {
+            /* content - padding  -  border - margin */
+
+            border: 5px solid orange;
+            background-color: bisque;
+            margin: 20px;
+            padding: 50px;
+        }
+
+        span {
+            background-color: green;
+            height: 500px;
+            width: 400px;
+        }
+
+        .thirdpara {
+            border: 5px red solid;
+            padding-top: 30px;
+            padding-bottom: 40px;
+            padding-left: 20px;
+            padding-right: 90px;
+            /* padding: 20px 40px; Y- Axis / x-axis */
+        }
+
+        .fourthpara {
+            border: 5px solid purple;
+            margin: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Box Model</h2>
+    <!-- HW
+
+        Content always in Rectagular Box
+         9:41 Press the Alt key and then use the left click to add multiple cursors.
+
+        13:30 Width & height don't apply to the span tag because it is an inline element it will take space according to the content written in it.
+
+        32:20 Yes, we can add in short-hand style just like padding.
+
+        36:40 The box-sizing property allows us to include the padding and border in an element's total width and height.
+        If you set box-sizing: border-box; on an element, padding, and border are included in the width and height.
+     -->
+    <p class="firstpara">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus itaque, quas maiores id ex mollitia
+        quisquam incidunt harum excepturi repellat, tenetur voluptatum nostrum atque nulla voluptas nihil cum inventore
+        quod dolor illum libero accusantium dolores eveniet possimus. Aut, praesentium vero. Laborum ipsum consequuntur
+        consequatur molestias minima. Veniam consectetur aspernatur qui!
+
+    </p>
+    <p class="secondpara">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus itaque, quas maiores id ex mollitia
+        quisquam incidunt harum excepturi repellat, tenetur voluptatum nostrum atque nulla voluptas nihil cum inventore
+        quod dolor illum libero accusantium dolores eveniet possimus. Aut, praesentium vero. Laborum ipsum consequuntur
+        consequatur molestias minima. Veniam consectetur aspernatur qui!
+
+    </p>
+    <p class="thirdpara">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus itaque, quas maiores id ex mollitia
+        quisquam incidunt harum excepturi repellat, tenetur voluptatum nostrum atque nulla voluptas nihil cum inventore
+        quod dolor illum libero accusantium dolores eveniet possimus. Aut, praesentium vero. Laborum ipsum consequuntur
+        consequatur molestias minima. Veniam consectetur aspernatur qui!
+
+    </p>
+    <p class="fourthpara">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus itaque, quas maiores id ex mollitia
+        quisquam incidunt harum excepturi repellat, tenetur voluptatum nostrum atque nulla voluptas nihil cum inventore
+        quod dolor illum libero accusantium dolores eveniet possimus. Aut, praesentium vero. Laborum ipsum consequuntur
+        consequatur molestias minima. Veniam consectetur aspernatur qui!
+
+    </p>
+    <!-- span is inline block element hight and width does not affected span element -->
+    <span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, delectus!</span>
+</body>
+
+</html>

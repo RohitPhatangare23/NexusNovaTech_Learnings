@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            border: 2px solid red;
+            padding: 50px;
+        }
+        div{
+            border: 2px solid red;
+            margin: 20px;
+            padding: 30px;
+            width: 40px;
+            height: 40px;
+            /* display: inline; */
+        }
+        span{
+            border: 2px solid orange;
+            margin: 250px;
+            padding: 60px;
+            height: 200px;
+            width: 200px;
+            /* display: block; */
+            display: inline-block;
+
+        }
+        h3{
+            /* display: none; */
+            visibility: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- block element : 10 block element ,
+        take a content in new line , 
+        change width(take extream leaft to right) 
+        you can give custom width, height , margin , padding -->
+    <div>HTML Course</div>
+    <div>CSS Course</div>
+
+    <!-- inline element a , 
+        span same line , take content width ;
+        custom width and height ,margin not applyicable,
+        (horizontal)margin come only, 
+        take padding-->
+    <span>
+
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit amet.
+    </span>
+    
+    <section class="box">
+        this is box
+    </section>
+
+    <span>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur temporibus 
+    </span>
+
+    <a href="https://www.w3schools.com/css/css_display_visibility.asp">CSS Display</a>
+
+    <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, obcaecati?</h3>
+</body>
+</html>

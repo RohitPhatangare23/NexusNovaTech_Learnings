@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Position Property</title>
+
+  <style>
+    .container {
+      border: 2px solid red;
+      margin-right: 20px;
+      padding: 20px;
+      margin-top: 10px;
+      /* position: relative; */
+      height: 8000px;
+      background-color: bisque;
+    }
+
+    .extra {
+      height: 5000px;
+      background-color: rgb(244, 153, 153);
+    }
+
+    .first {
+      display: inline-block;
+      border: 2px solid red;
+      margin-right: 20px;
+      padding: 20px;
+    }
+
+    .second {
+      display: inline-block;
+      border: 2px solid red;
+      margin-right: 20px;
+      padding: 20px;
+      position: absolute;
+      top: 50px;
+      left: 300px;
+    }
+
+    .third {
+      display: inline-block;
+      border: 2px solid red;
+      margin-right: 20px;
+      padding: 20px;
+      /* sticky in there perticular area
+        parent container ke andar taak */
+      position: sticky;
+      /* give units */
+      top: 80px;
+    }
+
+    .fourth {
+      display: inline-block;
+      border: 2px solid red;
+      margin-right: 20px;
+      padding: 20px;
+      /* pure window me fixed rahegi */
+      position: fixed;
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <a href="https://www.w3schools.com/css/css_positioning.asp">CSS Postion</a>
+
+  <div class="container">
+    <div class="first">BOX-1</div>
+    <div class="second">BOX-2</div>
+    <div class="third">BOX-3</div>
+    <div class="fourth">BOX-4</div>
+
+    <!-- Top,left,bottom,right
+
+            position: static;
+            HTML elements are positioned static by default.
+            Static positioned elements are not affected by the top, bottom, left, and right properties.
+
+            position: relative;
+            An element with position: relative; is positioned relative to its normal position.
+            Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. 
+            * Other content will not be adjusted to fit into any gap left by the element.
+
+            position: fixed;
+            An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+            A fixed element does not leave a gap in the page where it would normally have been located.
+            Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used:
+
+            position: absolute;
+            An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+            However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+            Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+
+
+            position: sticky;
+            An element with position: sticky; is positioned based on the user's scroll position.
+            A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+         -->
+  </div>
+  <div class="extra">
+
+
+  </div>
+</body>
+
+</html>

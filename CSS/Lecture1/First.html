@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Is CSS Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h2 {
+            /* Here we gave  Internal CSS 1st Priority Over the Inline CSS using !important  */
+            color: pink !important;
+        }
+
+        p {
+            background-color: yellow;
+            font-style: italic;
+        }
+
+        article {
+            background: rgb(0, 15, 128);
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- 
+        CSS tutorial or CSS 3 tutorial provides basic and advanced concepts of CSS technology. Our CSS tutorial is developed for beginners and professionals. The major points of CSS are given below:
+
+        CSS stands for Cascading Style Sheet.
+        CSS is used to design HTML tags.
+        CSS is a widely used language on the web.
+        HTML, CSS and JavaScript are used for web designing. It helps the web designers to apply style on HTML tags. 
+    -->
+
+    <h2 style="color: aqua;">CSS Gives style and appearance </h2>
+    <pre>
+        Css depends on
+        1. Specificity :- means priority of selectors 
+        Inline css > id > class > element
+        2. !important 
+        3. Order in which css is declared , the last one have higher priority
+        4. Inheritance means some css propertues will apply on all the elements insiade the selector like color but some not like border
+    </pre>
+
+    <h3>
+        CSS = Inline / Internal / External
+        <br>
+        <br>
+        Interview Question :-
+        <br>
+        Q1 . Display : Block VS Display : Inline
+        <br>
+        Q2 . Display : Inline VS Display : Inline-Block
+    </h3>
+
+    <!-- Inline > Internal > External -->
+    <p style="background-color: blueviolet;">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab possimus vero enim vitae? Quam tenetur saepe,
+        sedprovident delectus itaque iusto quos, nam ipsam reiciendis nesciunt? Soluta ex nihil ipsa.
+    </p>
+    <p style="color: rgb(251, 3, 247);">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. In tempore velit eius fugit dicta quaerat atque ipsam
+        audantium ut expedita, iste ipsum, quisquam beatae tempora maiores animi labore eaque. Nulla numquam nesciunt
+        adipisci, dolor cum modi eligendi ab quam, consequuntur, rerum molestias quos atque totam at fuga qui nihil
+        ratione.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorum expedita quia ipsam amet odit eligendi,
+        otam, molestias enim minus inventore ut, officia odio nulla voluptatum tenetur eius eos necessitatibus deserunt!
+        Inventore, quas eum distinctio itaque placeat error? Expedita, laborum.
+    </p>
+
+    <article>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus aliquam voluptatem est eveniet repellendus magni
+        voluptatum similique, laboriosam unde laudantium harum nemo at corporis neque. Tenetur voluptatibus dolore
+        commodi! Magni assumenda sequi mollitia vitae tempora doloremque incidunt blanditiis voluptatem, molestias omnis
+        temporibus ex, beatae reiciendis voluptatibus a laboriosam nesciunt maxime aspernatur, officia ab? Enim delectus
+        commodi quod ut quibusdam explicabo.
+    </article>
+
+    <div style="border: 2px solid red;">
+        Block-level Elements Div and p,A block-level element always starts on a new line,
+        the browsers automatically add some space (a margin) before and after the element.
+        A block-level element always takes up the full width available
+    </div>
+
+    <span style="border: 2px solid red;">Inline Elements
+        An inline element does not start on a new line.
+        An inline element only takes up as much width as necessary
+    </span>
+    <button>sumbit</button>
+    <!-- ----------------------------------------------------------------------------------- -->
+    <hr>
+
+    <h1>answers</h1>
+    <h2>Block Element</h2>
+    <div class="block">I am a block element</div>
+
+    <h2>Inline Elements</h2>
+    <span class="inline">I am inline</span>
+    <span class="inline">I am also inline</span>
+
+    <h2>Inline-Block Elements</h2>
+    <div class="inline-block">I am inline-block</div>
+    <div class="inline-block">I am also inline-block</div>
+
+
+</body>
+
+</html>

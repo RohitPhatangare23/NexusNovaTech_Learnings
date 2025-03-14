@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Text-Shadow</title>
+    <style>
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            background-color: #2e36cc;
+            color: #ee0000;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px 10px rgba(120, 100, 230, 0.3);
+            /* box-shadow - offset-x offset-y blur spread color */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: -5px -5px rgba(233, 85, 85, 0.3);
+        }
+
+        /* value positive then = bottom and right */
+        /* value negetive then = top and left */
+        span {
+            font-size: 1.5em;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px rgba(120, 100, 230, 0.3);
+        }
+
+        /* inset means shadow apply inside */
+        .bothdiff {
+            font-size: 1.5em;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+        }
+
+        .gradientText {
+            font-size: 1.5em;
+            margin: 25px 25px;
+            background-image: linear-gradient(red, blue);
+            color: transparent;
+            background-clip: text;
+        }
+        .hoverEffect:hover {
+            border: 2px solid black;
+            border-radius: 5px;
+            font-size: 1.5em;
+            color: #ee0000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Rohit Phatangare</h1>
+    <div class="container">
+        <div class="card">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quos voluptatibus recusandae quia optio
+            excepturi beatae ea. Aliquam amet, ratione iste sed voluptas asperiores architecto quae soluta delectus
+            sequi, blanditiis eum. Eaque assumenda porro eos voluptates illum, architecto mollitia! Ab fugiat tenetur
+            sint ducimus, nemo beatae. Nobis nisi unde voluptatem!
+        </div>
+    </div>
+    <span>Lorem ipsum dolor sit amet.</span>
+
+    <span class="bothdiff">
+        consectetur adipisicing elit. Sint.
+    </span>
+
+    <div class="gradientText">
+        Rohit Phatangare
+    </div>
+
+    <div class="hoverEffect">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam enim, ab corrupti atque est alias aliquid earum eveniet ut, libero a eaque quaerat repellat culpa doloribus magnam veritatis saepe voluptas!
+    </div>
+</body>
+
+</html>

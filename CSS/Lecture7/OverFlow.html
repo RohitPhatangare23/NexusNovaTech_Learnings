@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        .box{
+            border: 2px solid red;
+            overflow: auto;
+        }
+        .item{
+            height: 100px;
+            width: 100px;
+            margin: 2px;
+            color: aliceblue;
+            background-color: green;
+            border: 2px solid black;
+            float: left; /*Grid collapse*/
+            /*overflow parent*/
+        }
+        #item3{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item" id="item3">C</div>
+    </div>
+</body>
+</html>

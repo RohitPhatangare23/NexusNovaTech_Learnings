@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation & Keyframes</title>
+    <style>
+    
+    
+        
+        /* Box styling */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            animation-name: moveBox;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+            /* shorthand */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: moveBox 3s infinite alternate 3s ease-in-out forwards;
+        }
+        
+        /* Keyframes for animation */
+        @keyframes moveBox {
+            0% {
+                left: 0;
+                background-color: blue;
+                transform: scale(1);
+            }
+            50% {
+                background-color: red;
+                transform: scale(1.2);
+            }
+            100% {
+                left: 500px;
+                background-color: green;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

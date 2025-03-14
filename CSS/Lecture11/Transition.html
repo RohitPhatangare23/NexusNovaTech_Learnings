@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition - Ease Variations</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition:all 0.5s;
+            /* shorthand */
+            /* Transition : property |duration| timing-function |delay  */
+        }
+        
+        /* Ease-in effect = slow stand end fast */  
+        .ease-in {
+            transition-timing-function: ease-in;
+        }
+        
+        /* Ease-out effect = start fast end slow */
+        .ease-out {
+            transition-timing-function: ease-out;
+        }
+        
+        /* Ease-in-out effect = slow start and slow end*/
+        .ease-in-out {
+            transition-timing-function: ease-in-out;
+        }
+        
+        /* Hover effects to trigger transitions */
+        .box:hover {
+            width: 50%;
+            background-color: red;
+            /* transform: scale(1.2); */
+        }
+    </style>
+</head>
+<body>
+    <div class="box ease-in">Ease In</div>
+    <div class="box ease-out">Ease Out</div>
+    <div class="box ease-in-out">Ease In-Out</div>
+</body>
+</html>
