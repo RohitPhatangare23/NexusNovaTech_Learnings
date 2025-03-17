@@ -36,14 +36,18 @@
             background-color: brown;
             
         }
+        /* 640 se jyada to yaha hoga */
         @media (min-width:640px) {
             .container{
                 flex-direction:row;
             }
         }
+        /* 640 se kaam to yaha hoga */
         @media (max-width:640px) {
             .container{
-                flex-direction: column;
+               
+                flex-wrap: wrap;
+                /* flex-direction: column; */
             }
         }
 

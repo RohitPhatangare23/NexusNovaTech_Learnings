@@ -25,6 +25,9 @@ SCSS concepts = 1)operator + / * -
         &::before{
             content: "Mr ";
         }
+        &::after{
+            content: "web developer ";
+        }
     }
     p{
         color: white;
