@@ -1,0 +1,24 @@
+// Syntax: @for $var from <start> through <end>
+// Through: 1 thorough 5 means 5 is included in the loop
+// to : 1 to 5 means 5 is exluded in the loop
+.container {
+    @for $i from 1 through 5 {
+      .item-#{$i} {
+        width: 20px * $i;
+        height: 20px * $i;
+        background-color: lighten(#3498db, $i * 5%);
+      }
+    }
+  }
+  $colors: red, green, blue, yellow;
+
+  .box {
+    @each $color in $colors {
+      .#{$color} {
+        background-color: $color;
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+  

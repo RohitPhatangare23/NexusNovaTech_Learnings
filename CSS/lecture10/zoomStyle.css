@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+.container{
+    display: grid;
+    border: 2px solid wheat;
+    
+}
+h2{
+    color: white;
+    text-align: center;
+}

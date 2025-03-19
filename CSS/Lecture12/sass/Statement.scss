@@ -1,0 +1,37 @@
+$size: large;
+$theme: dark;
+
+.button1 {
+  @if $size == small {
+    font-size: 12px;
+  } @else if $size == medium {
+    font-size: 16px;
+  } @else {
+    font-size: 20px;
+  }
+
+  @if $theme == light {
+    background: #fff;
+    color: #000;
+  } @else {
+    background: #000;
+    color: #fff;
+  }
+}
+.button2 {
+    @if $size == large {
+      font-size: 20px;
+    } @else if $size == medium {
+      font-size: 16px;
+    } @else {
+      font-size: 5px;
+    }
+  
+    @if $theme == dark {
+      background: #fff;
+      color: #000;
+    } @else {
+      background: #000;
+      color: #fff;
+    }
+  }
