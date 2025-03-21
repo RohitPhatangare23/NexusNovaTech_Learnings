@@ -1,0 +1,13 @@
+{
+  "name": "none",
+  "version": "1.0.0",
+  "main": "1_Template_literals.js",
+  "type": "module", 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+

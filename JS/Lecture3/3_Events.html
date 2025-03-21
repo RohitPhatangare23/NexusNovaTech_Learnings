@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in js</title>
+    <style>
+        .info{
+            border: 2px solid black;
+            padding: 20px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(30, 9, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p id="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, velit culpa dolores quisquam quis sunt.
+        </p>
+        <button id="btn" onclick="toggleHide()"> show / hide</button>
+    </div>
+
+    <p id="home" class="info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, velit culpa dolores quisquam quis sunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, autem ullam! At libero vel, quasi commodi doloribus alias praesentium necessitatibus.
+    </p>
+
+    <p id="about" class="info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, velit culpa dolores quisquam quis sunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, autem ullam! At libero vel, quasi commodi doloribus alias praesentium necessitatibus.
+    </p>
+
+    <p id="service" class="info">
+        <b>service</b> dolor sit amet consectetur adipisicing elit. Veniam, velit culpa dolores quisquam quis sunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, autem ullam! At libero vel, quasi commodi doloribus alias praesentium necessitatibus.
+    </p>
+
+
+
+    <script>
+        function toggleHide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+
+            if (para.style.display === "none") {
+                para.style.display = "block";
+            }
+            else {
+                para.style.display = "none";
+            }
+        }
+
+        let service = document.getElementById('service');
+        service.addEventListener('mouseover', function() {
+            alert('You inside the paragraph!');
+        });
+
+        let about = document.getElementById('about');
+        about.addEventListener('mouseout', function() {
+            confirm('You confirm left the paragraph!');
+        });
+
+
+        let home = document.getElementById('home');
+        home.addEventListener('click', function() {
+            alert('You clicked on the paragraph!');
+        });
+
+    </script>
+</body>
+
+</html>

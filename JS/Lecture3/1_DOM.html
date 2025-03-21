@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM=Document object model</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>home</li>
+            <li>about</li>
+            <li>services</li>
+            <li>contact</li>
+        </ul>
+    </div>
+
+    <div class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quae. 
+    </div>
+
+    <script>
+
+        let mainID=document.getElementById('main');
+        console.log(mainID);
+
+        let navID=document.getElementById('nav');
+        console.log(navID);
+
+        let containerClass=document.getElementsByClassName('container');
+        console.log(containerClass);
+
+        let content=document.getElementsByClassName('para');
+        console.log(content);
+
+        let set=document.querySelector('#nav');
+        console.log("selector retuerns "+ set);
+        let set1=document.querySelectorAll('#nav>li');
+        console.log("all selector retuerns "+ set1);
+        
+
+        
+    </script>
+</body>
+</html>

@@ -2,7 +2,7 @@
  variable = named memory location
  3 way to use variable = var | let | const
 */
-
+// var = global scope | let = block scope
 // 1 -  var declaration  -------------------------------------------------------------------------------------------
 
 var myVariable; // declaration

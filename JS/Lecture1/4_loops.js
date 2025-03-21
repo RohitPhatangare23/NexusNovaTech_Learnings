@@ -18,7 +18,7 @@ while (index <= length) {
 }
 console.log("--------------------------------");
 // // 3 - Do...while loop
- let i = 9999
+let i = 9999
 do {
     console.log(i);
     i++;
@@ -37,7 +37,7 @@ for (let value of array) {
     console.log(value);
 }
 console.log("--------------------------------");
-// 6 - For...in loop [enumerable property object ke andar ko iterate karne ke leye ye loop use hota hey ...]
+// 6 - For...in loop [enumerable property object ke andar ki keys iterate karne ke leye ye loop use hota hey ...]
 let obj = {name: "Rohit", age: 30, city: "Dahanu"};
 for (let key in obj) {
     console.log(key, " ",obj[key]);

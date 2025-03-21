@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInterval And SetTimeout</title>
+</head>
+
+<body>
+    <h1>add time and date in site</h1>
+    <h2>Time now is <span id="time"></span></h2>
+
+
+
+    <script>
+        function displayTime() {
+            time = new Date();
+            console.log(time);
+            document.getElementById("time").innerHTML = time;
+        } setInterval(displayTime, 1000);
+
+    </script>
+</body>
+
+</html>
