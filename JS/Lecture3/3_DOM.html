@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-3</title>
+    <style>
+        #box{    
+            background-color: red;
+            font-size: 2rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>DOM Manipulation</h1>
+    <div id="container" name="jsDiv">
+        <div class="firstdiv">
+            <h2>first div</h2>
+            Attributes
+            getAttribute( attr ) //to get the attribute value
+            setAttribute( attr, value ) //to set the attribute value
+        </div>
+        <div class="secondtdiv">
+            <h2>second div</h2>
+            Attributes
+            getAttribute( attr ) //to get the attribute value
+            setAttribute( attr, value ) //to set the attribute value
+        </div>
+    </div>
+    <p id="box" style="background-color: bisque;">
+        this is box
+    </p>
+
+    <script>
+        let div_container = document.querySelector('#container');
+        console.log(div_container);
+
+        let getAtrrib = div_container.getAttribute("id")
+        console.log(getAtrrib);
+
+        
+        let getAtrrib2 = div_container.getAttribute("name")
+        console.log(getAtrrib2);
+
+        let div_class = document.querySelector('.firstdiv');
+        console.log(div_class);
+        let getAtrrib3 = div_class.getAttribute("class")
+        console.log(getAtrrib3);
+        
+        let setAtrrib = div_class.setAttribute("class", "newClass");
+
+        // style = camlecase hoga
+
+        let para=document.querySelector('p');
+        // para.style.backgroundColor="blue";
+        // para.style.fontSize="1.5rem";
+        // para.innerText="Rohit Phatangare";
+
+    </script>
+    
+</body>
+</html>

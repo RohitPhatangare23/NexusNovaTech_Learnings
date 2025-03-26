@@ -22,7 +22,7 @@ JavaScript provides two primary module systems
 
 // ES6 module
 
-// import { sayHello, sayName } from "./3_ES6Module";
-// sayHello();
-// sayName("Nikhil");
-// sayName("Ritesh");
+import { sayHello, sayName } from "./3_ES6Module";
+sayHello();
+sayName("Nikhil");
+sayName("Ritesh");

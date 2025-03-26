@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-4</title>
+
+    <style>
+       .list{
+           border: 2px solid rgb(242, 5, 5);
+           padding: 10px;
+           margin: 10px;
+       }
+    </style>
+</head>
+<body>
+    <h1>DOM Manipulation</h1>
+    <p>Insert Elements</p>
+
+    <div class="list">
+        <ul>
+            <li>node.append( el ) //adds at the end of node (inside)</li>
+            <li>node.prepend( el ) //adds at the start of node (inside)</li>
+            <li>node.before( el ) //adds before the node (outside)</li>
+            <li>node.after( el ) //adds after the node (outside)</li>
+            <li>node.remove( ) //removes the node</li>
+        </ul>
+    </div>
+
+
+    <script>
+        // Create a new paragraph element
+        var newPara = document.createElement("p");
+        newPara.innerText = "This is a new paragraph";
+
+        // Append the new paragraph element to the body element
+
+        let div=document.querySelector(".list");
+        div.append(newPara);
+        // div.prepend(newPara);
+        // div.before(newPara);
+        // div.after(newPara);
+
+        // div.remove();
+
+        // adding new h2 heading
+        var newHeading = document.createElement("h2");
+        newHeading.innerHTML = "<h2>New Heading</h2>";
+        // Append the new heading element to the body element
+        document.body.prepend(newHeading);
+
+
+    </script>
+    
+</body>
+</html>

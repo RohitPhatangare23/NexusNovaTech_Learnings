@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-2  Properties</title>
+</head>
+
+<body>
+    <h1>DOM Properties  | Get and  set value</h1>
+    <h2 style="visibility: hidden;">this is not visible content</h2>
+    <div id="myDiv">
+        <h2>This is first child</h2>
+        <p>Hello, <strong>World!</strong></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, recusandae!</p>
+        <p>
+            tagName : returns tag for element nodes
+            innerText : returns the text content of the element and all its children
+            innerHTML : returns the plain text or HTML contents in the element
+            textContent : returns textual content even for hidden elements
+        </p>
+        <button type="submit">this is last child</button>
+    </div>
+
+    <script>
+        let tag_name = document.querySelector("h1");
+        console.log(tag_name);
+        console.log("Tag Name :", tag_name.tagName);
+
+
+        const div_elements = document.getElementById("myDiv");
+        console.log("✅ innerText:", div_elements.innerText);      // The plain text (no HTML formatting)
+        console.log("✅ innerHTML:", div_elements.innerHTML);      // Only the content inside the element
+        console.log("✅ outerHTML:", div_elements.outerHTML);      // The entire element including the tag itself
+        console.log("✅ textContent:", div_elements.textContent);  // Text with visible spacing applied
+
+         /* perfom in console | to set contnet
+        div_elements.innerText="Rohit" set innnerText="
+        div_elements.innnerHTML="<p>This is first para</p>
+
+        Not_Visible  =><h2 style="visibility: hidden;">this is not visible content</h2>
+        Not_Visible.innerText =>" "
+        Not_Visible.textContent =>"this is not visible content"
+
+        */
+
+        const Not_Visible=document.querySelector("h2");
+        console.log("visibility :", Not_Visible.textContent);
+
+        /*
+        3 types of node= text |comment | element 
+        */
+
+        // used for navigation.
+
+        //Node: firstChild property  
+        let f_child = div_elements.firstChild;
+        console.log("First Child :", f_child);  //by default text node
+        let l_child = div_elements.lastChild;
+        console.log("last Child :", l_child);
+
+        //Node: nextSibling property
+        let n_sibling = f_child.nextSibling;
+        console.log("Next Sibling :", n_sibling);
+
+        //Node: previousSibling property
+        let p_sibling = l_child.previousSibling;
+        console.log("Previous Sibling :", p_sibling);
+
+        //children property
+        let children = div_elements.children;
+        console.log("Children :", children);
+
+
+       
+    </script>
+
+</body>
+
+</html>

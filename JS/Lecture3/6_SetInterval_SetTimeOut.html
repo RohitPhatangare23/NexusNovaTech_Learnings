@@ -11,14 +11,25 @@
     <h1>add time and date in site</h1>
     <h2>Time now is <span id="time"></span></h2>
 
-
-
     <script>
+
+        // setTimeout --> Alllows us to run the function once after the interval of time
+        // clearTimeout --> Alllows us to run the function repeatedly after the interval of time
         function displayTime() {
             time = new Date();
             console.log(time);
             document.getElementById("time").innerHTML = time;
         } setInterval(displayTime, 1000);
+
+
+        function greet() {
+            console.log("Hello Good Morning ");
+        }
+        setTimeout(greet, 5000); 
+
+        
+
+
 
     </script>
 </body>
