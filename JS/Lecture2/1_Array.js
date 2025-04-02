@@ -38,7 +38,7 @@ console.log(subArr);
 
 // 6] Splice = (insert,replace,remove at any place in array)
 
-arr.splice(2, 0, "uday"); //index 2 to 0 step par uday add karo
+arr.splice(2, 2, "uday"); //index 2 to 0 step par uday add karo
 console.log(arr);
 
 arr.splice(3, 1);
@@ -92,3 +92,20 @@ console.log(findResult);
 
 let indexOfArray = [10, 20, 30, 40, 50];
 console.log(indexOfArray.indexOf(30)); //2
+
+console.log("------------Splice eg 2--------------------");
+
+let webDvlop = ["HTML", "CSS", "JS", "Bootstrap","wordpress","python","jquery","java"];
+
+console.log(webDvlop);
+
+// Add 'React_Native' and 'Php' after removing 'JS'.
+let removed = webDvlop.splice(1,3, 'PHP', 'React_Native')
+
+console.log(webDvlop);
+console.log(removed);
+
+// No Removing only Insertion from 2nd 
+// index from the ending
+webDvlop.splice(-2,0, 'React')
+console.log(webDvlop)

@@ -1,4 +1,4 @@
-// A javaScript object is an entity having state and behavior (properties and method).
+// ProtoType = A javaScript object is an entity having state and behavior (properties and method).
 
 let person = {
     name: "Rohit",
