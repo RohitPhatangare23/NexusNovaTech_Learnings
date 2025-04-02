@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #ff00cc;
+            background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+            background: linear-gradient(to right, #333399, #ff00cc);
+
+        }
+        .container {
+            height: 100vh;
+            width: 100vw;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            max-width: 600px;
+            width: 350px;
+            height: 570px;
+            border-radius: 15px;
+            background-color: aliceblue;
+        }
+        .card img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+
+        }
+        .card .text{
+            text-align: center;
+            padding:10px 20px;
+        }
+        .card .text p{
+            margin-top: 10px;
+        }
+        .box2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .box{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: space-between;
+            background-color: #ed8fda;
+            border-radius: 10px;
+            margin: 5px 10px;
+            padding: 10px 20px;
+        }
+        .box .leftbox{
+            width: 80%;
+            display: flex;
+            margin-left: 5px;
+            align-items: center;
+        }
+        .box .rightbox{
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box .rightbox a{
+            color: black;
+            text-decoration: none;
+        }
+        .box .rightbox a:hover{
+            color: aliceblue;
+        }
+        .box img{
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 5px;
+            mix-blend-mode: darken;
+        }
+        .box .price{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .box2 .btn{
+            background-color: #ff00cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .box2 a{
+            text-decoration: none;
+            color: #ff00cc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="images/shoe_4.jpg" alt="Image 1">
+            <div class="text">
+                <h2>Order Summary</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur, quam vel dictum elementum, quam
+                    velit tristique arcu,attis nunc justo in neque.</p>
+            </div>
+            <div class="box">
+                <div class="leftbox">
+                    <img src="images/facebook.png" alt="">
+                    <div class="price">
+                        <h3>Anual Price</h3>
+                        <h4>$99.99/year</h4>
+                    </div>
+                </div>
+                <div class="rightbox">
+                    <a href="">Change</a>
+                </div>
+            </div>
+            <div class="box2">
+                <button class="btn">Proceed to Payment</button>
+            <a href="#">Cancel Order</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

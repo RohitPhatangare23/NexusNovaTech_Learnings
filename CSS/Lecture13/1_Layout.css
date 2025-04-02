@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    padding: auto 20px;
+    background-color: #f5f5f5;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+h3{
+    font-size: 2rem;
+    font-weight: 500;
+}
+p{
+    font-size: 1.2rem;
+}
+header{
+    text-align: center;
+}
+.container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.box1{
+    margin-top: 20px;
+    min-height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content:start;
+
+}
+.box1 .leftbox{
+    width: 50%;
+    min-height: 250px;
+}
+.box1 .rightbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 10px;
+    flex-wrap: wrap;
+}
+.leftbox img{
+    float: right;
+    height: 100%;
+    width: 80%;
+    
+    
+}
+.box2{
+    margin-top: 20px;
+    min-height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.box2 .leftbox{
+    width: 50%;
+    min-height: 250px;
+}
+.box2 .rightbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+.box2 .leftbox img{
+    float: left;
+    height: 100%;
+    width: 80%;
+}

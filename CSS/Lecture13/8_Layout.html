@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f953c6;
+            background: -webkit-linear-gradient(to right, #f953c6, #b91d73);
+            background: linear-gradient(to right, #f953c6, #b91d73);
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .card{
+            /* border: 2px solid black; */
+            width: 350px;
+            height: 500px;
+            border-radius: 10px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card-img{
+            width: 100%;
+            height: 75%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .card-body{
+            padding: 10px 20px;
+        }
+        .card-title{
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+        <div class="container">
+            <div class="card">
+                <img src="images/QR_image.png" alt="Image" class="card-img">
+                <div class="card-body">
+                    <h1 class="card-title">Phone Pe QR</h1>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur eveniet veniam asperiores expedita laborum quis!</p>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
