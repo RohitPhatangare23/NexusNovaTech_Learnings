@@ -1,0 +1,29 @@
+need of node,npm 
+node -v 
+npm -v
+
+
+npm create vite@latest
+choose react
+choose javascript
+
+for run= npm run dev
+
+make component = rfce
+
+those repeat thing make component
+component is function return jsx
+jsx is a syntax extension for JavaScript used primarily in React for defining user interfaces(html ka code js me convert hoga )
+
+
+npm install -D tailwindcss@3 postcss autoprefixer
+npx tailwindcss init -p
+content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+
+  put in index.css
+  @tailwind base;
+@tailwind components;
+@tailwind utilities;
