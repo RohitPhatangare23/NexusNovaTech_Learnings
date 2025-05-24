@@ -7,9 +7,13 @@ npm create vite@latest
 choose react
 choose javascript
 
+npm i = install npm modules
+
 for run= npm run dev
 
-make component = rfce
+rfce = it is shorthand that generates a React functional component with an export statement 
+
+<> </> = Fragment
 
 those repeat thing make component
 component is function return jsx
